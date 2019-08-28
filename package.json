@@ -1,6 +1,11 @@
 {
   "name": "social_front",
   "version": "1.0.0",
+  "engines": {
+    "node": "10.3.0",
+    "npm": "6.x"
+  },
+  "private": true,
   "description": "",
   "main": "index.js",
   "scripts": {
