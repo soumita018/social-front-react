@@ -1,0 +1,93 @@
+body {
+  background: #ffe2e5; /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); 
+  background: linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  );  */
+}
+
+textarea.materialize-textarea {
+  min-height: 150px;
+}
+
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: #444343;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #444343;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #444343;
+}
+
+.post {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+.blockquote {
+  /* margin-top: 20px !important; */
+  padding-top: 30px;
+}
+
+.margin {
+  padding: 30px 50px;
+}
+
+.profile-box {
+  margin-top: 200px;
+  height: calc(100%-150px);
+}
+
+.profile-box img {
+  position: relative;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  top: -150px;
+  left: calc(50% - 150px);
+}
+
+.profile-box .container {
+  position: relative;
+
+  top: -150px;
+}
+
+.about {
+  line-height: 35px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+}
+.about::first-letter {
+  color: white;
+  font-size: 30px;
+  background: palevioletred;
+  text-transform: capitalize;
+  padding: 15px 15px 7px 15px;
+  border-radius: 50%;
+}
+
+.fonty {
+  line-height: 35px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+}
+.pro {
+  text-transform: capitalize;
+}
+.fndy {
+  margin: 10px;
+  padding: 10px;
+  color: rgb(240, 89, 114);
+}
