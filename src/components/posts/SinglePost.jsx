@@ -8,7 +8,7 @@ const SinglePost = ({ data }) => {
         <Link to={`/post/${data.id}`}>
           {data.image ? (
             <img
-              src={`http://127.0.0.1:8000/uploads/${data.image}`}
+              src={`https://test-social-k.herokuapp.com/uploads/${data.image}`}
               alt="kaka"
               className="responsive-img"
             />

@@ -72,7 +72,7 @@ const UserProfile = props => {
       <div className="card profile-box fonty">
         {profile.user.image ? (
           <img
-            src={`http://127.0.0.1:8000/uploads/${profile.user.image}`}
+            src={`https://test-social-k.herokuapp.com/uploads/${profile.user.image}`}
             alt="kaka"
             className="responsive-img z-depth-3"
           />
