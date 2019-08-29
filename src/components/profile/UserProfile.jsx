@@ -42,7 +42,7 @@ const UserProfile = props => {
       user {
         id
         name
-        image
+        imageUrl
         phone
         email
         Friends {
@@ -70,9 +70,9 @@ const UserProfile = props => {
   return (
     <React.Fragment>
       <div className="card profile-box fonty">
-        {profile.user.image ? (
+        {profile.user.imageUrl ? (
           <img
-            src={`https://test-social-k.herokuapp.com/uploads/${profile.user.image}`}
+            src={profile.user.imageUrl}
             alt="kaka"
             className="responsive-img z-depth-3"
           />
@@ -135,7 +135,7 @@ const UserProfile = props => {
         <div className="fixed-action-btn">
           <Link
             className="btn-floating btn-large waves-effect waves-light white"
-            to={`/myprofile/${props.match.params.id}`}
+            to={`/myprofile/`}
           >
             <img src="https://img.icons8.com/cotton/30/000000/edit--v2.png"></img>
           </Link>

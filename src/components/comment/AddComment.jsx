@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import api from "../../api/api";
+import M from "materialize-css";
 
 const AddComment = ({ addComment, id }) => {
   const [comments, setComment] = useState("");
@@ -22,6 +23,7 @@ const AddComment = ({ addComment, id }) => {
       }
       `)
       .then(res => {
+        M.toast({ html: "Your Comment Has Been Added !" });
         setComment("");
         addComment(res.data.data.createComment.comment);
       })

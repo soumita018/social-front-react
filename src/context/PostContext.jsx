@@ -10,7 +10,7 @@ export const PostProvider = props => {
     api(`{
         posts {
           id
-          image
+          imageUrl
           postText
           postedTime
           postedBy{

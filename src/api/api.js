@@ -8,4 +8,15 @@ const api = query => {
   });
 };
 
+export const apiImg = (query, image) => {
+  return axios({
+    url: "https://test-social-k.herokuapp.com/graphql/",
+    method: "post",
+    data: image,
+    params: {
+      query: query
+    }
+  });
+};
+
 export default api;

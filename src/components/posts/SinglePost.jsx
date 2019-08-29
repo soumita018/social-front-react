@@ -6,9 +6,9 @@ const SinglePost = ({ data }) => {
     <React.Fragment>
       <div className="card">
         <Link to={`/post/${data.id}`}>
-          {data.image ? (
+          {data.imageUrl ? (
             <img
-              src={`https://test-social-k.herokuapp.com/uploads/${data.image}`}
+              src={`${data.imageUrl}`}
               alt="kaka"
               className="responsive-img"
             />

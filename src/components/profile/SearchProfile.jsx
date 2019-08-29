@@ -9,19 +9,21 @@ const SearchProfile = props => {
   const [profile, setProfile] = useState([]);
 
   useEffect(() => {
-    api(`{
+    api(
+      `{
         user(search: "${props.match.params.search}") {
           id
           name
         }
-      }`)
+      }`
+    )
       .then(res => {
         setProfile(res.data.data.user);
       })
       .catch(error => {
         console.log(error);
       });
-  }, []);
+  }, [props.match.params.search]);
   return (
     <div>
       <h3 className="center grey-text">

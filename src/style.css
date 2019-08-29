@@ -34,6 +34,7 @@ textarea.materialize-textarea {
 .post {
   margin-top: 50px;
   margin-bottom: 80px;
+  height: 100%;
 }
 .blockquote {
   /* margin-top: 20px !important; */
